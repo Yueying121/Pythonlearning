@@ -1,0 +1,49 @@
+print("Hello, world") # Print the traditional hello world
+
+# Types of objects in Python
+type(6/2) # float
+type(6//2) # int, as the double slashes stand for integer division
+
+# Expression and Variables
+160/6 # cacluates how many hours there are in 160 minutes
+
+x = 3 + 2 * 2
+x   # 7
+
+y = (3 + 2) * 2
+y   # 10
+
+z = x + y
+z   # 17
+
+a = "1"
+b = "2"
+c = a + b  # c = "12"
+
+# use slice to print out the first three elements
+d = "ABCDEFG"
+print(d[0:3])
+
+# Use a stride value of 2 to print out every second character of the string e
+e = 'clocrkr1e1c1t'
+print(e[::2])
+
+# Print out a backslash
+print('\\')
+print(r"\ ")
+
+# Convert the variable f to uppercase:
+f = "You are wrong"
+f.upper()  # YOU ARE WRONG
+
+# Consider the variable g, and find the first index of the sub-string 'snow'
+g = "Mary had a little lamb Little lamb, little lamb Mary had a little lamb \
+Its fleece was white as snow And everywhere that Mary went Mary went, Mary went \
+Everywhere that Mary went The lamb was sure to go"
+g.find("snow") # 95
+
+# In the variable g, replace the sub-string Mary with Bob
+g.replace("Mary", "Bob")
+# "Bob had a little lamb Little lamb, little lamb Bob had a little lamb \
+Its fleece was white as snow And everywhere that Bob went Mary went, Bob went \
+Everywhere that Bob went The lamb was sure to go"
