@@ -1,0 +1,28 @@
+# Indexing
+  # Find the value stored at index 1 of a_list
+  a_list = [1, 'hello', [1, 2, 3], True]
+  a_list[1]     # 'hello'
+  
+# List Operations
+  # Retrieve the elements stored at index 1, 2 and 3 of a_list
+  a_list[1:4]    # ['hello', [1, 2, 3], True]
+
+  # Concatenate the following lists A = [1, 'a'] and B = [2, 1, 'd'] 
+    A = [1, 'a']
+    B = [2, 1, 'd']
+    A + B    # [1, 'a', 2, 1, 'd']
+  
+  # Add elemtns to list
+    L = [ "Michael Jackson", 10.2]
+    L.extend(['pop', 10])   # If we apply extend, we add two new elements to the list.
+    L     # ['Michael Jackson', 10.2, 'pop', 10]
+    L.append(['pop', 10])   # If we apply append, we add one new element consisting of a nested list.
+    L     # ['Michael Jackson', 10.2, ['pop', 10]]
+    
+  # Split the string
+    'hard rock'.split()   # ['hard', 'rock']
+
+# Copy and Clone List
+  A = ["hard rock", 10, 1.2]
+  B = A     # As A and B are referencing the same list, if we change list A, then list B also changes. 
+  B = A[:]  # Now if you change A, B will not change
