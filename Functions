@@ -1,0 +1,10 @@
+# 1. Come up with a function that divides the first input by the second input.
+      def div(a, b):
+        return (a / b)
+        
+# 2. Use con function to add two intergers, strings or lists, tuples   
+      def con(a, b):
+         return(a + b)
+      
+      con(2, 3)   # 5
+      con(['a', 1], [2, 'b'])   # ['a', 1, 2, 'b']
