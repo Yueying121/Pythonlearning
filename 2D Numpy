@@ -1,0 +1,21 @@
+# 1. Consider the following list a, convert it to Numpy Array.
+  a = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
+  import numpy as np
+  A = np.array(a)
+  A: ([1, 2, 3, 4],
+      [5, 6, 7, 8],
+      [9, 10, 11, 12])
+      
+# 2. Calculate the numpy array size.
+  A.size: 12
+
+# 3. Access the element on the first row and first and second columns.
+  A[0, 0:2] or A[0][0:2]  # array([1, 2])
+  
+# 4. Perform matrix multiplication with the numpy arrays A and B
+  B = np.array([[0, 1], [1, 0], [1, 1], [-1, 0]])
+  C = np.dot(A, B)
+  C: array([1, 4],
+           [5, 12],
+           [9, 20])
+  
