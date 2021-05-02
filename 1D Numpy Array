@@ -1,0 +1,45 @@
+# 1. Implement the following vector subtraction in numpy: u-v
+  u = np.array([1, 0])
+  v = np.array([0, 1])
+  u-v: array([ 1, -1])
+  
+# 2. Multiply the numpy array z with -2
+  z = np.array([2, 4])
+  z*(-2): array([-4, -8])
+  
+# 3. Consider the list [1, 2, 3, 4, 5] and [1, 0, 1, 0, 1], and cast both lists to a numpy array then multiply them together.
+  x = np.array([1, 2, 3, 4, 5])
+  y = np.array([1, 0, 1, 0, 1])
+  x*y: array([1, 0, 3, 0, 5])
+  
+# 4. Convert the list [-1, 1] and [1, 1] to numpy arrays a and b. \
+# Then, plot the arrays as vectors using the fuction Plotvec2 and find the dot product.
+  import numpy as np 
+  import matplotlib.pyplot as plt
+  %matplotlib inline  
+  
+  def Plotvec2(a,b):
+    ax = plt.axes()
+    ax.arrow(0, 0, *a, head_width=0.05, color ='r', head_length=0.1)
+    plt.text(*(a + 0.1), 'a')
+    ax.arrow(0, 0, *b, head_width=0.05, color ='b', head_length=0.1)
+    plt.text(*(b + 0.1), 'b')
+    plt.ylim(-2, 2)
+    plt.xlim(-2, 2)
+    
+  a = np.array([-1, 1])
+  b = np.array([1, 1])
+  Plotvec2(a, b)
+  print('The dot product is', np.dot(a,b))
+
+# 5. Convert the list [1, 0] and [0, 1] to numpy arrays a and b. \
+# Then, plot the arrays as vectors using the function Plotvec2 and find the dot product.
+  a = np.array([1, 0])
+  b = np.array([0, 1])
+  Plotvec2(a, b)
+  print('The dot product is', np.dot(a,b))
+  
+# 6. Why are the results of the dot product for [-1, 1] and [1, 1] and the dot product for [1, 0] and [0, 1] zero, \
+# but not zero for the dot product for [1, 1] and [0, 1]?
+# Hint: Study the corresponding figures, pay attention to the direction the arrows are pointing to.  
+  The vectors used for question 4 and 5 are perpendicular. As a result, the dot product is zero. 
